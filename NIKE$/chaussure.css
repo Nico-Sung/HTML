@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'avenir', sans-serif;
+}
+
+.espace{
+    margin: 0 44px 0 44px;
+}
+
+/* HEADER */
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1vw 0 0 0;
+}
+
+input{
+    border-radius: 50px;
+    height: 3.194vw ;
+    width: 13.194vw;
+    padding: 0 0 0 16px;
+    font-size: 1.389vw;
+    background-color:white;
+}
+
+.nike{
+    width: 10.417vw;
+    margin: auto;
+    background: none;
+}
+
+.shopping{
+    width: 13.194vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart{
+    width: 2.778vw;
+    margin-right: 25px;
+    background: none;
+}
+
+.theme{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 0;
+}
+
+h1{
+    margin: 20px 25px 0 0;
+    font-size: 1.389vw;
+    font-weight: 100;
+}
+
+.offer{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* FIRST BLOC */
+
+
+.first-bloc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.img-bloc{
+    display: flex;
+    margin: 11.806vw 0 0 0;
+    width: 50%;
+}
+
+article{
+    width: 30vw;
+}
+
+h2{
+    margin: 11.806vw 0 0 0;
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+h3{
+    font-size: 1.5vw;
+    font-weight: 100;
+
+}
+
+h4{
+    margin: 4vh 0 0 0;
+    font-size: 1.3vw;
+
+}
+
+.list-img{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 540px;
+}
+
+.small-img{
+    width: 4vw;
+    background-color: #F6F6F6;
+    margin: 0 0 10px 0;
+    border-radius: 10px;
+    transition: box-shadow 0.3s; 
+
+}
+
+.small-img:hover{
+    background-color: #5e5e5e;
+}
+
+
+.big-img{
+    width: 37vw;
+    margin: 0 0 0 1vw;
+    background-color:#F6F6F6 ;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+}
+
+.top-size{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+h5{
+    font-size: 1vw;
+    color: #727272;
+}
+
+.buttons-size{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button-size{
+    margin: 1vw 2px 0 0;
+    border-radius: 10px;
+    width: 9.861vw;
+    height: 3.472vw;
+    font-size: 1vw;
+    background: none;
+    cursor: pointer;
+    border-width: 2px;
+    border-color: #5e5e5e;
+    transition: box-shadow 0.3s; 
+    font-family: 'avenir', sans-serif;
+
+}
+
+.button-size:hover {
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button-size:focus {
+    outline: none; 
+    border-color: #5e5e5e; 
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3); 
+}
+
+.buy{
+    display: flex;
+    flex-direction: column;
+}
+
+.panier{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    background-color: black;
+    height: 5vw;
+    font-size: large;
+    color: white;
+    font-family: 'avenir', sans-serif;
+    cursor: pointer;
+    transition: box-shadow 0.3s; 
+    border: 0;
+    width: 100%;
+}
+
+.panier:hover {
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+    background-color: rgb(128, 128, 128);
+}
+
+.favoris{
+    border-radius: 50px;
+    background:none ;
+    height: 5vw;
+    font-size: large;
+    font-family: 'avenir', sans-serif;
+    cursor: pointer;
+    transition: box-shadow 0.3s; 
+    border-width: 2px;
+    border-color: #aba9a9;
+
+}
+
+.favoris:hover {
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+h6{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 100;
+    color: #727272;
+    padding: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+
+    header {
+        position: static;
+        background-color: transparent; 
+    }
+
+    .top-header {
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 20px; 
+    }
+
+    input {
+        width: 80%; 
+        max-width: 300px; 
+        margin-bottom: 20px; 
+        height: 30px;
+        font-size: 15px ;
+    }
+
+    .nike {
+        width: 30%; 
+        display: block;
+    }
+
+    .shopping {
+        width: 100%; 
+        justify-content: center; 
+        margin-top: 20px; 
+    }
+
+    .cart {
+        margin: 0 15px; 
+        width: 40px;
+    }
+
+    .theme {
+        flex-direction: column;
+        align-items: center; 
+        margin-bottom: 20px; 
+    }
+
+    article{
+        width: 60vw;
+    }
+
+    h2{
+        font-size: 27px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    h4{
+        font-size:20px ;
+    }
+
+    h5{
+        font-size: 15px;
+    }
+
+    .big-img{
+        width: 244px;
+        }
+
+    .list-img{
+        height: 245px;
+    }
+
+    .small-img{
+        width: 50px;
+    }
+
+    h1 {
+        font-size: 18px; 
+        margin: 10px 0; 
+    }
+
+    .first-bloc {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .img-bloc {
+        width: 100%; 
+    }
+
+    .article {
+        width: 80%; 
+        text-align: center; 
+    }
+
+    .size-text{
+        font-size:15px ;
+    }
+
+    .button-size{
+        height: 30px;
+        width: 50px;
+        font-size: 8px;
+    }
+
+    .panier{
+        height: 40px;
+    }
+    
+    .favoris{
+        height: 40px;
+    }
+
+    h6{
+        margin: 0;
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaussure</title>
+    <link rel="stylesheet" href="chaussure.css">
+</head>
+<body>
+    <header id="header-bloc">
+        <div class="espace">
+            <section class="top-header">
+                <input id="input-search" type="text" placeholder="Search">
+                <a href="./accueil.html"><img class="nike" src="./images/Swoosh.svg" alt="nike"></a>
+                <div class="shopping">
+                    <a href=""><img class="cart" src="./images/person_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="person"></a>
+                    <a href="./panier.html"><img class="cart" src="./images/shopping_cart_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="cart"></a>
+                </div>
+            </section>
+            <section class="theme">
+                <a href="http://www.nike.com/fr/w/nouveau-3n82y" target="_blank"><h1>Nouveautés</h1></a>
+                <a href="https://www.nike.com/fr/homme"target="_blank"><h1>Hommes</h1></a>
+                <a href="https://www.nike.com/fr/femme"target="_blank"><h1>Femmes</h1></a>
+                <a href="https://www.nike.com/fr/enfant"target="_blank"><h1>Enfants</h1></a>
+                <a href="https://www.nike.com/fr/w/promotions-3yaep"target="_blank"><h1 class="offer">Offres</h1></a>
+            </section>
+        </div>
+    </header>
+    <section class="espace">
+        <section class="first-bloc">
+                <div class="img-bloc">
+                    <div class="list-img">
+                        <img class="small-img" src="./images airforce/chaussure-air-force-1-07-pour-GjGXSP.png" alt="">
+                        <img class="small-img" src="./images airforce/chaussure-air-force-1-07-pour-GjGXSP (1).png" alt="">
+                        <img class="small-img" src="./images airforce/chaussure-air-force-1-07-pour-GjGXSP (2).png" alt="">
+                        <img class="small-img" src="./images airforce/chaussure-air-force-1-07-pour-GjGXSP (3).png" alt="">
+                        <img class="small-img" src="./images airforce/chaussure-air-force-1-07-pour-GjGXSP (4).png" alt="">
+                        <img class="small-img" src="./images airforce/chaussure-air-force-1-07-pour-GjGXSP (5).png" alt="">
+                        <img class="small-img" src="./images airforce/chaussure-air-force-1-07-pour-GjGXSP (6).png" alt="">
+                        <img class="small-img" src="./images airforce/chaussure-air-force-1-07-pour-GjGXSP (7).png" alt="">
+                        <img class="small-img" src="./images airforce/chaussure-air-force-1-07-pour-GjGXSP (8).png" alt="">
+                    </div>
+                    <div class="main-img">
+                        <img class="big-img" id="bigImage" src="./images airforce/chaussure-air-force-1-07-pour-GjGXSP.png" alt="">
+                    </div>
+                </div>
+                <article>
+                    <div class="name">
+                        <div class="top-name">
+                            <h2>Nike Air Force 1'07</p>
+                            <h3>Chaussure pour homme</h3>
+                        </div>
+                        <h4>119,99€</h4>
+                    </div>
+                    <div class="size">
+                        <div class="top-size">
+                            <h4 class="size-text">Sélectionner la taille</h4>
+                            <a href="https://www.nike.com/fr/size-fit/chaussures-pour-homme" target="_blank"><h5>Guide des tailles</h5></a>
+                        </div>
+                        <div class="buttons-size">
+                            <button class="button-size">EU 39</button>
+                            <button class="button-size">EU 40</button>
+                            <button class="button-size">EU 41</button>
+                            <button class="button-size">EU 42</button>
+                            <button class="button-size">EU 43</button>
+                            <button class="button-size">EU 44</button>
+                            <button class="button-size">EU 45</button>
+                            <button class="button-size">EU 46</button>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <a href="https://www.nike.com/fr/cart"target="_blank"><button class="panier">Ajouter au panier</button></a>
+                        <button class="favoris">Ajouter aux favoris</button>
+                    </div>
+                    <h6>Ce produit est exclu des promotions et réductions du site.</h6>
+                </article>
+        </section>
+    </section>
+    <script>
+        const smallImages = document.querySelectorAll('.small-img');
+
+        const bigImage = document.getElementById('bigImage');
+
+        smallImages.forEach((smallImage) => {
+            smallImage.addEventListener('click', function() {
+        bigImage.src = smallImage.src;
+        bigImage.alt = smallImage.alt;
+    });
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="panier.css">
+    <title>Panier</title>
+</head>
+<body>
+    <header id="header-bloc">
+        <div class="espace">
+            <section class="top-header">
+                <input id="input-search" type="text" placeholder="Search">
+                <a href="./accueil.html"><img class="nike" src="./images/Swoosh.svg" alt="nike"></a>
+                <div class="shopping">
+                    <a href=""><img class="cart" src="./images/person_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="person"></a>
+                    <a href="./panier.html"><img class="cart" src="./images/shopping_cart_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="cart"></a>
+                </div>
+            </section>
+            <section class="theme">
+                <a href="http://www.nike.com/fr/w/nouveau-3n82y" target="_blank"><h1>Nouveautés</h1></a>
+                <a href="https://www.nike.com/fr/homme"target="_blank"><h1>Hommes</h1></a>
+                <a href="https://www.nike.com/fr/femme"target="_blank"><h1>Femmes</h1></a>
+                <a href="https://www.nike.com/fr/enfant"target="_blank"><h1>Enfants</h1></a>
+                <a href="https://www.nike.com/fr/w/promotions-3yaep"target="_blank"><h1 class="offer">Offres</h1></a>
+            </section>
+        </div>
+    </header>
+    <div class="espace2">
+    <main class="first-bloc">
+        <section class="top-first-bloc">
+            <section class="left">
+                <div class="square">
+                    <div class="square-title">
+                        <h2>Livraison gratuite pour tous les membres.</h2>
+                    </div>
+                    <div class="square-text">
+                        <p>Deviens membre Nike pour profiter de livraisons rapides et gratuites. <a href="" target="_blank"> Rejoins-nous </a>ou <a href="" target="_blank">S'identifier</a></p>
+                    </div>
+                </div>
+                <div class="panier-title">
+                    <h2>Panier</h2>
+                </div>
+                <div class="panier-shop">
+                    <div class="left-side">
+                        <a href="./chaussure.html"><img class="shoes-img" src="./images airforce/chaussure-air-force-1-07-pour-GjGXSP.png" alt=""></a>
+                        <h3>Retrait gratuit</h3>
+                        <h3><a href="" target="_blank">Trouver un magasin</a></h3>
+                    </div>
+                    <div class="right-side">
+                        <div class="title-shoes">
+                            <a href="./chaussure.html"><h4>Nike Air Force 1'07</h4></a>
+                            <h4>119,99 €</h4>
+                        </div>
+                        <h5>Chaussure pour homme</h5>
+                        <h5>Noir/Noir</h5>
+                        <div class="select">
+                            <div>
+                                <h5>Taille / Pointure</h5>
+                                <select name="size" id="size-select">
+                                    <option value="39">39</option>
+                                    <option value="40">40</option>
+                                    <option value="41">41</option>
+                                    <option value="42">42</option>
+                                    <option value="43">43</option>
+                                    <option value="44">44</option>
+                                    <option value="45">45</option>
+                                    <option value="46">46</option>
+                                </select>
+                            </div>
+                            <div>
+                                <h5>Quantité</h5>
+                                <select name="quantity" id="size-quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="svg-shoes">
+                            <a href="" target="_blank"><img class="svg" src="./images panier/featured_seasonal_and_gifts_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+                            <a href="" target="_blank"><img class="svg" src="./images panier/favorite_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+                            <a href="" target="_blank"><img class="svg" src="./images panier/delete_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>   
+            </section>
+            <section class="right">
+                <div class="summary">
+                    <h2>Récapitulatif</h2>
+                    <h2 class="code-summary">As-tu un code promo ?</h2>
+                    <div class="apply-summary">
+                        <input class="input-summary" type="text">
+                        <button class="button-apply">Appliquer</button>
+                    </div>
+                    <div class="summary-text">
+                        <h3>Sous-total</h3>
+                        <h3>119,99 €</h3>
+                    </div>
+                    <div class="summary-text">
+                        <h3>Frais estimés de prise en charge et d'expédition</h3>
+                        <h3>Gratuit</h3>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="summary-text">
+                        <h3>Total</h3>
+                        <h4>119,99 €</h4>
+                    </div>
+                </div>
+                <div class="buttons-pay">
+                    <button class="button-paiement">Paiement</button>
+                    <button class="button-paypal"><img src="./images panier/1054px-PayPal_logo.svg.png" alt=""></button>
+                </div>
+            </section>
+        </section>
+        <section class="favoris">
+            <h2 class="title-favoris">Favoris</h2>
+            <h2 class="text-favoris">Afficher tes favoris ?</h2>
+            <h2 class="text-favoris"> <a href="" target="_blank"> Rejoins-nous </a>ou <a href="" target="_blank">S'identifier</a></h2>
+        </section>
+    </main>
+</div>
+<script>
+    const sizeSelect = document.getElementById('size-select');
+    sizeSelect.addEventListener('change', function() {
+        const selectedSize = sizeSelect.options[sizeSelect.selectedIndex].text;
+        alert(`Vous avez sélectionné la taille : ${selectedSize}`);
+    });
+
+    const quantitySelect = document.getElementById('size-quantity');
+    quantitySelect.addEventListener('change', function() {
+        const selectedQuantity = quantitySelect.options[quantitySelect.selectedIndex].text;
+        alert(`Vous avez sélectionné une quantité de : ${selectedQuantity}`);
+    });
+    
+    document.addEventListener('DOMContentLoaded', function() {
+    const applyButton = document.querySelector('.button-apply');
+    const promoCodeInput = document.querySelector('.input-summary');
+
+    applyButton.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        const promoCode = promoCodeInput.value.trim();
+
+        if (promoCode === '') {
+            alert('Veuillez entrer un code promo.');
+        } else {
+            alert(`Le code promo "${promoCode}" a été appliqué.`);
+            promoCodeInput.value = '';
+        }
+    });
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'avenir', sans-serif;
+}
+
+.espace{
+    margin: 20px 44px 0 44px;
+}
+
+.espace2{
+    margin: 0 150px 0 150px;
+}
+
+/* HEADER */
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    transition: background-color 0.3s ease-in-out;
+    top: 0;
+  }
+
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+input{
+    border-radius: 50px;
+    height: 46px ;
+    width: 190px;
+    padding: 0 0 0 16px;
+    font-size: 20px;
+    background-color:white;
+}
+
+.nike{
+    width: 150px;
+    margin: auto;
+}
+
+.shopping{
+    width: 190px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart{
+    width: 40px;
+    margin-right: 25px;
+}
+
+.theme{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 0;
+}
+
+h1{
+    margin: 20px 25px 0 0;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.offer{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* FIRST BLOC */
+
+.top-first-bloc{
+    display: flex;
+}
+
+.first-bloc{
+    position: relative;
+    display: inline-block;
+    margin: 190px 0 0 0;
+    width: 100%;
+}
+
+/* SQUARE */
+
+.square{
+    border: 1px rgb(226, 226, 226) solid;
+    padding: 15px 50px 15px 15px;
+}
+
+.square-title h2 {
+    font-size: 20px;
+    color: #ff6c00;
+}
+
+.square-text{
+    width: 40vw;
+    color: rgb(141, 141, 141);
+    margin-top: 3px;
+}
+
+.square-text a{
+    text-decoration: underline ;
+    text-underline-offset: 5px;
+    color: rgb(141, 141, 141);
+
+}
+
+/* LEFT FIRST BLOC */
+
+.panier-title{
+    margin: 20px 0 20px 0;
+}
+
+.panier-shop{
+    display: flex;
+}
+
+.left{
+    padding-bottom: 30px;
+    border-bottom:1px rgb(191, 191, 191) solid ;
+}
+
+.left-side h3{
+    margin-top: 10px ;
+    font-size: 16px;
+}
+
+.left-side h3 a{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+
+}
+
+.right-side{
+    width: 100%;
+}
+
+.title-shoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-shoes h4{
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+h5{
+    margin: 10px 0 0 20px;
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(141, 141, 141);
+}
+
+.shoes-img{
+    width: 200px;
+    background-color: #F6F6F6;
+}
+
+.select{
+    display: flex;
+}
+
+.select div{
+    display: flex;
+}
+
+#size-select, #size-quantity{
+    border: 0;
+    height: 40px;
+    width: 46px;
+    margin-left: 8px;
+    color: rgb(141, 141, 141);
+}
+
+.svg-shoes{
+    margin: 30px 0 0 20px;
+}
+
+.svg{
+    margin-right: 10px;
+}
+
+/* RIGHT FIRST BLOC */
+
+.right{
+    width: 100%;
+    margin: 0 0 0 50px;
+}
+
+.summary{
+    padding-bottom: 16px;
+    border-bottom: 1px rgb(226, 226, 226) solid;
+}
+
+.code-summary{
+    font-size: 16px;
+    margin-top:20px ;
+}
+
+.apply-summary{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.input-summary{
+    margin-top: 16px;
+    border-radius: 10px;
+    height: 42px;
+    width: 210px;
+    font-size: 16px;
+    border: 1px gray solid;
+
+}
+
+.button-apply{
+    border-radius: 50px;
+    height: 40px;
+    width: 150px;
+    font-family: "avenir", sans-serif;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.summary-text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.summary-text h3{
+    font-weight: 100;
+}
+
+.total{
+    padding-bottom: 16px;
+    border-bottom: 1px rgb(226, 226, 226) solid;
+}
+
+.buttons-pay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.button-paiement{
+    border-radius: 50px;
+    background-color: black;
+    height: 4vw;
+    font-size: large;
+    color: white;
+    font-family: 'avenir', sans-serif;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    border: 0;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.button-paiement:hover{
+    background-color: rgb(128, 128, 128);
+
+}
+
+.button-paypal{
+    border-radius: 50px;
+    background-color: rgb(238 238 238);
+    height: 4vw;
+    font-size: large;
+    font-family: 'avenir', sans-serif;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    border-width: 2px;
+    border: 0.1px rgb(218, 218, 218) solid;
+    width: 100%;
+
+}
+
+.button-paypal:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.button-paypal img{
+    width: 60px;
+}
+/* FAVORIS */
+
+.favoris{
+    margin-top: 60px;
+}
+
+.text-favoris{
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.text-favoris a{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: rgb(141, 141, 141);
+}
+
+
+@media only screen and (max-width: 767px) {
+
+
+.espace {
+    margin: 20px 10px 0 10px;
+    width: 100%;
+}
+
+.first-bloc{
+    margin: 0;
+}
+
+.espace2 {
+    margin: 0 10px 0 10px;
+}
+
+header{
+    position: static;
+    background-color: white; 
+}
+
+.top-header {
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 20px; 
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0; 
+}
+
+input {
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.nike {
+    width: 30%; 
+    display: block;
+}
+
+.shopping {
+    width: 100%; 
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.top-first-bloc {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart {
+    margin: 0 15px; 
+    width: 40px;
+}
+
+.apply-summary{
+    align-items: center;
+}
+
+.theme {
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+.left-side h3 {
+    font-size: 14px;
+}
+
+.shoes-img {
+    width: 150px;
+}
+
+.button-paiement,
+.button-paypal {
+    height: 40px;
+    font-size: 16px; 
+}
+
+.right{
+    margin: 0;
+}
+
+}

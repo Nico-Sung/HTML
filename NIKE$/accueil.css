@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'avenir', sans-serif;
+}
+
+.espace{
+    margin: 20px 44px 0 44px;
+}
+
+/* HEADER */
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+input{
+    border-radius: 50px;
+    height: 46px ;
+    width: 190px;
+    padding: 0 0 0 16px;
+    font-size: 20px;
+    background-color:white;
+}
+
+.nike{
+    width: 150px;
+    margin: auto;
+}
+
+.shopping{
+    width: 190px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart{
+    width: 40px;
+    margin-right: 25px;
+}
+
+.theme{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 0;
+}
+
+h1{
+    margin: 20px 25px 0 0;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.offer{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/* PREMIER BLOC */
+
+
+.first-bloc {
+    position: relative;
+    display: inline-block;
+    margin: 190px 0 0 0;
+}
+
+.first-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-text {
+    position: absolute;
+    top: 70%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 37px;
+    font-family: "futura", sans-serif;
+    font-weight: 400px;
+    margin: 0 0 28px 0;
+}
+
+.gift-text{
+    margin: 0 0 28px 0;
+}
+
+button {
+    border-radius: 50px;
+    width: 100px;
+    height: 40px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: box-shadow 0.3s; 
+    margin: 0 6px 0 0;
+}
+
+.buttons{
+    display: flex;
+}
+
+button:hover {
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+    background-color: rgb(128, 128, 128);
+}
+
+
+/* SECOND BLOC*/
+
+.title{
+    font-size: 30px;
+    margin: 0 0 36px 0;
+}
+
+.carousel{
+    display: flex;
+    overflow-x: scroll;
+    padding: 0 0 10px 0;
+
+}
+
+
+.shoes-img{
+    width: 410px;
+    margin: 0 20px 0 0;
+}
+
+.name{
+    font-size: 24px;
+    margin: 0;
+    font-weight: 100;
+}
+
+.shoes{
+    font-size: 22px;
+    color: #919191;
+    font-weight: 100;
+    margin: 0;
+}
+
+.price{
+    font-weight: 100;
+    margin:  13px 0 0 0;
+}
+
+/*THIRD BLOC*/
+
+.third-bloc {
+    margin: 46px 0 0 0;
+}
+
+.gift-bloc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gift {
+    position: relative;
+    display: inline-block;
+}
+
+.gift-img {
+    width: 97%;
+    height: auto;
+}
+
+.gift-btn {
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff; 
+    color: #000000; 
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 6px 0 0;
+}
+
+.gift-btn:hover {
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+    background-color: rgb(128, 128, 128);
+}
+
+@media screen and (max-width: 767px) {
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'avenir', sans-serif;
+    }
+
+    .espace {
+        margin: 20px 20px 0 20px;
+    }
+
+    header {
+        position: static;
+        background-color: transparent;
+    }
+
+    .top-header {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    input {
+        width: calc(100% - 40px);
+        max-width: 300px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .nike {
+        width: 120px;
+        margin: 20px auto;
+    }
+
+    .shopping {
+        width: calc(100% - 40px);
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .cart {
+        margin: 0 15px;
+    }
+
+    .theme {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 20px 0;
+    }
+
+    h1 {
+        font-size: 15px;
+        margin: 10px 10px 10px 0
+    }
+
+    .first-bloc {
+        position: relative;
+        display: inline-block;
+        margin: 0;
+    }
+
+    .first-img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .image-text {
+        position: absolute;
+        top: 70%;
+        left: 17%;
+        transform: translate(-50%, -50%);
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 10px;
+        font-family: "futura", sans-serif;
+        margin: 0px 0 5px 58px;
+    }
+
+    .gift-text {
+        margin: 0 0 10px 0;
+        font-size: 10px;
+        position: relative;
+        left: 28%;
+        }
+
+    button {
+        border-radius: 50px;
+        width: 66px;
+        height: 22px;
+        border: 0;
+        font-weight: bold;
+        cursor: pointer;
+        transition: box-shadow 0.3s;
+        margin: 0px 0px 45px 10px;
+        font-size: 9px;
+        position: relative;
+        left: 50%;
+    }
+
+    .buttons {
+        display: flex;
+    }
+
+    button:hover {
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+        background-color: rgb(128, 128, 128);
+    }
+
+    .title {
+        font-size: 30px;
+        margin: 0 0 36px 0;
+    }
+
+    .carousel {
+        display: flex;
+        overflow-x: scroll;
+        padding: 0 0 10px 0;
+    }
+
+    .shoes-img {
+        width: 410px;
+        margin: 0 20px 0 0;
+    }
+
+    .name {
+        font-size: 24px;
+        margin: 0;
+        font-weight: 100;
+    }
+
+    .shoes {
+        font-size: 22px;
+        color: #919191;
+        font-weight: 100;
+        margin: 0;
+    }
+
+    .price {
+        font-weight: 100;
+        margin: 13px 0 0 0;
+    }
+
+    .third-bloc {
+        margin: 46px 0 0 0;
+    }
+
+    .gift-bloc {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .gift {
+        position: relative;
+        display: inline-block;
+    }
+
+    .gift-img {
+        width: 97%;
+        height: auto;
+    }
+
+    .gift-btn {
+        position: absolute;
+        top: 84%;
+        left: 24%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffff;
+        color: #000000;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 0 6px 0 0;
+        width: 41px;
+        height: 15px;
+        font-size: 6px;
+    }
+
+    .gift-btn:hover {
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+        background-color: rgb(128, 128, 128);
+    }
+}
